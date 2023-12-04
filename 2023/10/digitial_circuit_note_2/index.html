@@ -1,0 +1,255 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Note 2 for Digital Circuit Project | PRISMS CS Club Website</title><meta name="author" content="PRISMS CS Club"><meta name="copyright" content="PRISMS CS Club"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Introduction to Logisim Because of the inconvenience in porting large tangible circuit, to get access to circuits everywhere and avoid accidents, we introduce the application logisim as a powerful too">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Note 2 for Digital Circuit Project">
+<meta property="og:url" content="https://prisms-cs-club.github.io/2023/10/digitial_circuit_note_2/index.html">
+<meta property="og:site_name" content="PRISMS CS Club Website">
+<meta property="og:description" content="Introduction to Logisim Because of the inconvenience in porting large tangible circuit, to get access to circuits everywhere and avoid accidents, we introduce the application logisim as a powerful too">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://prisms-cs-club.github.io/img/digital_circuit/cover.jpg">
+<meta property="article:published_time" content="2023-10-10T04:00:00.000Z">
+<meta property="article:modified_time" content="2023-12-03T21:47:11.380Z">
+<meta property="article:author" content="PRISMS CS Club">
+<meta property="article:tag" content="introduction to logisim">
+<meta property="article:tag" content="gates in logicism">
+<meta property="article:tag" content="more complex circuits">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://prisms-cs-club.github.io/img/digital_circuit/cover.jpg"><link rel="shortcut icon" href="/img/PRCS_logo_transparent.png"><link rel="canonical" href="https://prisms-cs-club.github.io/2023/10/digitial_circuit_note_2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":700},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Note 2 for Digital Circuit Project',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-12-03 16:47:11'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/font.css"><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/PRCS_logo_transparent.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(to right, #2c3e50, #4ca1af)"><nav id="nav"><span id="blog-info"><a href="/" title="PRISMS CS Club Website"><span class="site-name">PRISMS CS Club Website</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Note 2 for Digital Circuit Project</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-10-10T04:00:00.000Z" title="Created 2023-10-10 00:00:00">2023-10-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-12-03T21:47:11.380Z" title="Updated 2023-12-03 16:47:11">2023-12-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/lecture-notes/">lecture notes</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">498</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>3min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Note 2 for Digital Circuit Project"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="Introduction-to-Logisim">Introduction to Logisim</h2>
+<p>Because of the inconvenience in porting large tangible circuit, to get access to circuits everywhere and avoid accidents, we introduce the application logisim as a powerful tool for circuit design. It can simulate the circuits on computer with easy moves.</p>
+<h3 id="Logisim-Download">Logisim Download</h3>
+<p>To get access to the circuits simulator, we need to download the software first. Here is the link to the website:<br>
+<a target="_blank" rel="noopener" href="https://snapcraft.io/logisim-evolution">https://snapcraft.io/logisim-evolution</a><br>
+All you need to do is to choose the correct package and click download to get the file. Then install the file to your computer, and open it.</p>
+<h2 id="Test-Gates-in-logisim">Test Gates in logisim</h2>
+<p>Find logic gates in “gates” section<br>
+<img src="/img/digital_circuit/2/digital-circuit-p1.png" alt=""><br>
+Find pin in “Wiring section<br>
+<img src="/img/digital_circuit/2/digital-circuit-p2.png" alt=""><br>
+Connect wires use the “cursor” tool<br>
+<img src="/img/digital_circuit/2/digital-circuit-t2p3.png" alt=""><br>
+Change inputs of pins using the “hand” tool<br>
+Light green indicates high signals<br>
+<img src="/img/digital_circuit/2/digital-circuit-t2p4.png" alt=""></p>
+<h3 id="Little-Exercise-Make-a-Half-Adder">Little Exercise: Make a Half Adder</h3>
+<p>Half adder is a combination of two inputs and create a sum bit and a carry bit both as output. The sum output represents the least significant bits while the carry output represents the most significant bit, which means sum output is 1 as long as one of the input is 1, and the carry output is 1 if and only if both of them are 1.<br>
+Here is the truth table for you to check:<br>
+<img src="/img/digital_circuit/2/Half-adder-truth-table.png" alt="Half Adder Truth Table"><br>
+Here is the circuit that can perform such a function:<br>
+<img src="/img/digital_circuit/2/half-adder-sample.png" alt=""></p>
+<h3 id="Implement-the-full-adder">Implement the full adder</h3>
+<p>Using the half adder cicruit, we can easily make a full adder which gives C_out and sum that only become true when more than two true input or become true while one of the inputs are true respectively. Here is the circuit to make such a logic gate.<br>
+<img src="img/digital_circuit/2/full_adder_sample.png" alt="Full adder"></p>
+<h2 id="Make-Hex-number-Display">Make Hex number Display</h2>
+<p>Hex number as you might know is a kind of number that goes to the next digit after added up to 16, and it uses “A, B, C, D, E, F” to represent the numbers that bigger than 9 to make it’s rigid “one digit”. Here, we use the logism ciruit to make one hex number one digit displayer.</p>
+<h3 id="Learn-to-use-Splitter">Learn to use Splitter</h3>
+<p>Use splitters (in wiring) to convert between multi-bit and single-bit wires. Darg the splitter out from wiring category, then adjust the facing to North, and bit number to 0 to 3 from left to right in the left bottom bar. Here is what is should look like after adjustment.<br>
+<img src="/img/digital_circuit/2/splitter_demonstration.png" alt=""></p>
+<h3 id="Make-the-Display">Make the Display</h3>
+<p>Based on the splitter file, pull out Dip Switch from I/O category and adjust its number of switch to 4. Then connect the dip switch to the splitter. Drug the hex digit displayer from I/O category and place it aside. Then switch the switches to see the changes of the hex number, and try to display from 0 all the way to F.<br>
+<img src="/img/digital_circuit/2/digital_number_display.png" alt=""></p>
+<h2 id="Challenge-Implement-3-bit-adder">Challenge, Implement 3 bit adder</h2>
+<p>Try your best to make the circuit in the following graph, and test the truth table of it.<br>
+<img src="/img/digital_circuit/2/finally_yes.png" alt=""></p>
+<p>For more information, you can check out the <a target="_blank" rel="noopener" href="http://www.cburch.com/logisim/docs/2.7/en/html/guide/tutorial/index.html">digital circuit reference</a>.</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/Phrank6">Frank Liu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/Phrank6">https://github.com/Phrank6</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/introduction-to-logisim/">introduction to logisim</a><a class="post-meta__tags" href="/tags/gates-in-logicism/">gates in logicism</a><a class="post-meta__tags" href="/tags/more-complex-circuits/">more complex circuits</a></div><div class="post_share"><div class="social-share" data-image="/img/digital_circuit/cover.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/12/website_guidelines/" title="Club Website Contribution Guidelines"><img class="cover" src="/img/PRCS_logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Club Website Contribution Guidelines</div></div></a></div><div class="next-post pull-right"><a href="/2023/09/manim_project_note_2/" title="Note 2 for Manim Project"><img class="cover" src="/img/manim_logo.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Note 2 for Manim Project</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/PRCS_logo_transparent.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">PRISMS CS Club</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" href="hhttps://github.com/prisms-cs-club"><i class="fab fa-github"></i><span>GitHub gruop of PRISMS CS Club</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This website is currently maintained by Tony Zhao, one of the club leaders. If you have any questions, please contact me by tony.zhao@prismsus.org.</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction-to-Logisim"><span class="toc-text">Introduction to Logisim</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Logisim-Download"><span class="toc-text">Logisim Download</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Test-Gates-in-logisim"><span class="toc-text">Test Gates in logisim</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Little-Exercise-Make-a-Half-Adder"><span class="toc-text">Little Exercise: Make a Half Adder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Implement-the-full-adder"><span class="toc-text">Implement the full adder</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Make-Hex-number-Display"><span class="toc-text">Make Hex number Display</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Learn-to-use-Splitter"><span class="toc-text">Learn to use Splitter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Make-the-Display"><span class="toc-text">Make the Display</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Challenge-Implement-3-bit-adder"><span class="toc-text">Challenge, Implement 3 bit adder</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/12/website_guidelines/" title="Club Website Contribution Guidelines"><img src="/img/PRCS_logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Club Website Contribution Guidelines"/></a><div class="content"><a class="title" href="/2023/12/website_guidelines/" title="Club Website Contribution Guidelines">Club Website Contribution Guidelines</a><time datetime="2023-12-03T20:22:34.576Z" title="Created 2023-12-03 15:22:34">2023-12-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/digitial_circuit_note_2/" title="Note 2 for Digital Circuit Project"><img src="/img/digital_circuit/cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Note 2 for Digital Circuit Project"/></a><div class="content"><a class="title" href="/2023/10/digitial_circuit_note_2/" title="Note 2 for Digital Circuit Project">Note 2 for Digital Circuit Project</a><time datetime="2023-10-10T04:00:00.000Z" title="Created 2023-10-10 00:00:00">2023-10-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/09/manim_project_note_2/" title="Note 2 for Manim Project"><img src="/img/manim_logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Note 2 for Manim Project"/></a><div class="content"><a class="title" href="/2023/09/manim_project_note_2/" title="Note 2 for Manim Project">Note 2 for Manim Project</a><time datetime="2023-09-30T04:00:00.000Z" title="Created 2023-09-30 00:00:00">2023-09-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/09/digital_circuit_note_1/" title="Note 1 for Digital Circuit Project"><img src="/img/digital_circuit/cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Note 1 for Digital Circuit Project"/></a><div class="content"><a class="title" href="/2023/09/digital_circuit_note_1/" title="Note 1 for Digital Circuit Project">Note 1 for Digital Circuit Project</a><time datetime="2023-09-26T04:00:00.000Z" title="Created 2023-09-26 00:00:00">2023-09-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/09/manim_project_note_1/" title="Note 1 for Manim Project"><img src="/img/manim_logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Note 1 for Manim Project"/></a><div class="content"><a class="title" href="/2023/09/manim_project_note_1/" title="Note 1 for Manim Project">Note 1 for Manim Project</a><time datetime="2023-09-18T04:00:00.000Z" title="Created 2023-09-18 00:00:00">2023-09-18</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By PRISMS CS Club</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>function getGiscusTheme (theme) {
+  return theme === 'dark' ? 'dark' : 'light'
+}
+
+function loadGiscus () {
+  const config = Object.assign({
+    src: 'https://giscus.app/client.js',
+    'data-repo': 'prisms-cs-club/PRISMS-CS-club.github.io',
+    'data-repo-id': 'R_kgDOKTRtGQ',
+    'data-category-id': 'DIC_kwDOKTRtGc4CZ1yg',
+    'data-mapping': 'pathname',
+    'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+    'data-reactions-enabled': '1',
+    crossorigin: 'anonymous',
+    async: true
+  },null)
+
+  let ele = document.createElement('script')
+  for (let key in config) {
+    ele.setAttribute(key, config[key])
+  }
+  document.getElementById('giscus-wrap').insertAdjacentElement('afterbegin',ele)
+}
+
+function changeGiscusTheme (theme) {
+  function sendMessage(message) {
+    const iframe = document.querySelector('iframe.giscus-frame')
+    if (!iframe) return
+    iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app')
+  }
+
+  sendMessage({
+    setConfig: {
+      theme: getGiscusTheme(theme)
+    }
+  });
+}
+
+btf.addModeChange('giscus', changeGiscusTheme)
+
+if ('Giscus' === 'Giscus' || !false) {
+  if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+  else loadGiscus()
+} else {
+  function loadOtherComment () {
+    loadGiscus()
+  }
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
